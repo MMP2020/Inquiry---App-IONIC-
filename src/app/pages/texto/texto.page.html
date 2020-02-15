@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button (click)="close()" slot = 'start' fill="clear" >
+      <ion-icon name= "arrow-back" size="large"></ion-icon>
+    </ion-button>   
+      <h3>{{this.texto[0]["nome"]}}</h3>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p class ='ion-margin'>
+    Autores:&nbsp;{{this.texto[0]["autores"]}}
+    <br><br>
+    Resumo:&nbsp;{{this.texto[0]["resumo"]}}
+    <br><br>
+    <ion-label  (click)="abrir(this.texto[0]['link'])">{{this.texto[0]["link"]}}</ion-label>
+    <br><br>
+    Referências:
+    <br>
+    {{this.texto[0]["referencia"]}}
+    </p>
+
+</ion-content>

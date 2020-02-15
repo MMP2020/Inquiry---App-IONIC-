@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button (click)="close()" slot = 'start' fill="clear" >
+      <ion-icon name= "arrow-back" size="large"></ion-icon>
+    </ion-button>   
+      <h3 >Youtube</h3>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-item *ngFor="let video of listaYoutube;" (click)="assistir(video.link)" >
+          <ion-thumbnail  item-start>
+            <img [src]="video.thumb">
+          </ion-thumbnail>
+          &nbsp;
+          &nbsp;
+          <ion-label class="ion-text-wrap">{{video.nome}}</ion-label>
+        </ion-item>
+      </ion-list>
+</ion-content>
+  

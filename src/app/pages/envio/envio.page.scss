@@ -1,0 +1,29 @@
+ion-toolbar{
+    --background:orange;
+}
+h3{
+    text-align: center;
+    position: relative; 
+    right: 30px;
+    color:white;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+  }
+
+  .mylabel{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  ion-back-button{
+      color:white;
+  }
+
+  ion-icon{
+      margin-right: 5px;
+  }
+
+  .mybutton{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }

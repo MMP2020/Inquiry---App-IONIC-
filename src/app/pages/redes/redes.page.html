@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+         <ion-back-button (click)="update()" color="white"></ion-back-button>
+        </ion-buttons>  
+        <h3>Construção de redes<br>colaborativas</h3>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-button class='Btn1' size="large" expand='block' (click)="mostrarOrientacao()">
+      <ion-icon name="people" class="i1"></ion-icon>
+      <h1 class="titulo1">Orientação</h1>
+    </ion-button>
+  
+    <ion-item  class="input1" lines="none">
+      <ion-textarea [(ngModel)]="proposta.redes" rows="10" cols="20" type = 'text' placeholder = 'Construção de redes colaborativas e participativas com as TICs (continuação das ações)'></ion-textarea>
+    </ion-item>
+  
+    
+  </ion-content>

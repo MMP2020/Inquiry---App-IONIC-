@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button color="white"></ion-back-button>
+        </ion-buttons>
+        <h3>Todas as propostas<br>disponíveis</h3>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-list>
+        <ion-card *ngFor="let proposta of propostas;let i = index">
+            <ion-item>
+                <ion-label side="start">{{proposta.qsc}} </ion-label>
+                <ion-icon name="eye" color="gray" size="large" item-end (click)='visualizar(i)'></ion-icon>
+            </ion-item>
+        </ion-card>
+    </ion-list>
+
+</ion-content>

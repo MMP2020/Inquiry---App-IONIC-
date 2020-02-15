@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+       <ion-back-button color="white"></ion-back-button>
+      </ion-buttons>  
+      <h3>Modelo de Atividades<br>Baseadas em Investigação - MABI</h3>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <img src="assets\mabi.jpg" (click)="abrir()">
+
+  <ion-button class='Btn1' size="large" expand='block' (click)="mostrarOrientacao()">
+    <ion-icon name="people" class="i1"></ion-icon>
+    <h1 class="titulo1">Orientação<p class="text2">Orientação para a utilização<br>do modelo de atividades<br>baseadas em investigação<br>no enfoque CTS</p></h1>
+  </ion-button>
+
+  <ion-button class='Btn2' size="large" expand='block' routerLink="/atividades" routerDirection="forward">
+    <ion-icon class="i2" name="build"></ion-icon>
+    <h1 class="titulo2">MABI<p class="text2">Inicie a construção do seu<br>modelo de atividades</p></h1>
+ </ion-button>
+
+</ion-content>

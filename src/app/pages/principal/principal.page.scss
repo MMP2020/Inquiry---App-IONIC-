@@ -1,0 +1,90 @@
+ion-toolbar{
+    --background:#2B78E4;
+}
+ion-icon{
+    color:white;
+  }
+  ion-back-button{
+    color:white;
+  }
+h3{
+  margin-left: 3%;
+    color:white;  
+}
+.button-inner{
+    align-items: flex-start;
+}
+.Btn1 { 
+    width: 92%;
+    height: 22%;
+    margin-top: 2%;  
+    margin-left: 4%;
+    --border-radius: 5%;
+    --background:rgb(2, 168, 2);
+}
+
+.Btn2 { 
+    width: 92%;
+    height: 22%;
+    margin-top: 3%;  
+    margin-left: 4%;
+    --border-radius: 5%;
+    --background:purple;
+}
+
+.Btn3 { 
+    width: 92%;
+    height: 22%;
+    margin-top: 3%;  
+    margin-left: 4%;
+    --border-radius: 5%;
+    --background:red;
+}
+.i2{
+    font-size: 64px;
+}
+ion-icon{  
+    margin-right: 8%; 
+    position: relative;
+}
+img{  
+    padding: 10%;
+  
+
+}
+.titulo{
+    position: relative;
+    text-align: left;
+    font-size:18px;
+    font-weight: bold;
+    left: 15px;
+    text-transform: none;
+}
+.titulo1{
+    position: relative;
+    text-align: left;
+    font-size:17px;
+    left: 18px;
+    font-weight: bold;
+    text-transform: none;
+}
+.titulo2{
+    text-align: left;
+    font-size:20px;
+    position: relative;
+    left:15px;
+    font-weight: bold;
+    text-transform: none;
+}
+.i1{
+    font-size: 64px;
+}
+.i3{
+    font-size: 64px;
+}
+.text2{
+    position: relative;
+    font-size:17px;
+    top:10px;
+    font-weight: normal;
+}

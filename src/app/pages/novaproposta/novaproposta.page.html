@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+       <ion-back-button color="white"></ion-back-button>
+      </ion-buttons>  
+      <h3>Não neutralidade da<br>Ciência-tecnologia</h3>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   <ion-row>
+     <ion-col size = "6">
+       <ion-button class = 'Btn1'  (click)="mostrarOrientacao(visoes)" >
+         <ion-icon  name = "people" class="i1"></ion-icon>
+         <h1 class ="titulo1">Orientação</h1>
+       </ion-button>
+     </ion-col>
+     
+    <ion-col size ="6">
+      <ion-button class = 'Btn2'   (click)="mostrarTextos(visoes)">
+        <ion-icon  class = "i2" name = "book"></ion-icon>
+        <h1 class ="titulo2">Indicação<br>de texto</h1>
+      </ion-button>  
+    </ion-col> 
+  </ion-row> 
+    
+  <ion-row>
+      <ion-col size = "6">
+        <ion-button class = 'Btn3' size="large"  expand = 'block' (click)="mostrarYoutube(videosvisoes)">
+          <ion-icon  name = "logo-youtube" class="i3"></ion-icon>
+        </ion-button>
+      </ion-col>
+      
+     <ion-col size ="6">
+       <ion-button class = 'Btn4' size="large"  expand = 'block' routerLink="/envio" routerDirection="forward">
+         <ion-icon  class = "i4" name = "paper-plane"></ion-icon>
+         <br>
+         <h1 class ="titulo3">Enviar texto</h1>
+       </ion-button>  
+     </ion-col> 
+   </ion-row>
+
+   <ion-button class = 'BtnContinuar' routerLink="/qsc" expand = 'block' routerDirection="forward" >Continuar</ion-button>
+</ion-content>

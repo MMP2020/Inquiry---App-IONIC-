@@ -1,0 +1,147 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button (click)="close()" slot='start' fill="clear">
+      <ion-icon name="close" size="large"></ion-icon>
+    </ion-button>
+    <ion-title>Proposta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content >
+   <ion-list *ngIf="item.uid==uid">
+    <ion-item>
+      <ion-label position="floating">QSC</ion-label>
+      <ion-input [(ngModel)]="item.qsc" required type="text" autocomplete=“true” spellcheck=“true”></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Pergunta Central</ion-label>
+      <ion-input [(ngModel)]="item.central" type="text" autocomplete=“true” spellcheck=“true”></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Pergunta especifica</ion-label>
+      <ion-input [(ngModel)]="item.especifica" required type="text" autocomplete=“true” spellcheck=“true”></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Problematização</ion-label>
+      <ion-input [(ngModel)]="item.probl" type="text" autocomplete=“true” spellcheck=“true”></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Hipoteses</ion-label>
+      <ion-input [(ngModel)]="item.hipoteses" required type="text" autocomplete=“true” spellcheck=“true”></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Analise</ion-label>
+      <ion-input [(ngModel)]="item.cts" type="text" autocomplete=“true” spellcheck=“true”></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Conteudo</ion-label>
+      <ion-input [(ngModel)]="item.conteudo" required type="text" autocomplete=“true” spellcheck=“true”></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Cooperação</ion-label>
+      <ion-input [(ngModel)]="item.cooperacao" type="text" autocomplete=“true” spellcheck=“true”></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Planejamento</ion-label>
+      <ion-input [(ngModel)]="item.planejamento" required type="text" autocomplete=“true” spellcheck=“true”></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Investigação</ion-label>
+      <ion-input [(ngModel)]="item.investigacao" type="text" autocomplete=“true” spellcheck=“true”></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Analise dos dados</ion-label>
+      <ion-input [(ngModel)]="item.dados" required type="text" autocomplete=“true” spellcheck=“true”></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Retomada e discussão da QSC</ion-label>
+      <ion-input [(ngModel)]="item.retomada" type="text" autocomplete=“true” spellcheck=“true”></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Ação na realidade</ion-label>
+      <ion-input [(ngModel)]="item.acao" required type="text" autocomplete=“true” spellcheck=“true”></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Comunicação</ion-label>
+      <ion-input [(ngModel)]="item.comunicacao" type="text" autocomplete=“true” spellcheck=“true”></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Construção de redes colaborativas</ion-label>
+      <ion-input [(ngModel)]="item.redes" type="text" autocomplete=“true” spellcheck=“true”></ion-input>
+    </ion-item>
+    <ion-button color="danger" (click)="excluir()" size="small" expand="block" class="fr">
+      <ion-icon name="trash"></ion-icon>
+    </ion-button>
+  
+  
+  </ion-list>
+
+<ion-list *ngIf="item.uid!=uid">
+
+  <ion-item>
+    <ion-label>QSC</ion-label>
+    <ion-label>{{item.qsc}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Pergunta Central</ion-label>
+    <ion-label >{{item.central}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Pergunta especifica</ion-label>
+    <ion-label >{{item.especifica}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Problematização</ion-label>
+    <ion-label>{{item.probl}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Hipoteses</ion-label>
+    <ion-label >{{item.hipoteses}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Analise</ion-label>
+    <ion-label>{{item.cts}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Conteudo</ion-label>
+    <ion-label>{{item.conteudo}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Cooperação</ion-label>
+    <ion-label>{{item.cooperacao}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Planejamento</ion-label>
+    <ion-label>{{item.planejamento}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Investigação</ion-label>
+    <ion-label >{{item.investigacao}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Analise dos dados</ion-label>
+    <ion-label >{{item.dados}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Retomada e discussão da QSC</ion-label>
+    <ion-label >{{item.retomada}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Ação na realidade</ion-label>
+    <ion-label >{{item.acao}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Comunicação</ion-label>
+    <ion-label >{{item.comunicacao}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Construção de redes colaborativas</ion-label>
+    <ion-label >{{item.redes}}</ion-label>
+  </ion-item>
+</ion-list>
+ 
+
+
+</ion-content>

@@ -1,0 +1,28 @@
+ion-toolbar{
+    --background:red;
+}
+h3{
+    text-align: center;
+    position: relative; 
+    right: 30px;
+    color:white;  
+  }
+  ion-back-button{
+      color:white;
+  }
+  ion-item{
+    width: 80%;
+    height: auto;
+    --background: white;
+    --border-radius: 5%;
+    margin-left: 10%;
+    margin-top: 7%;
+    --border-width:black;
+    --border-color: rgb(0, 0, 0);
+
+    ion-input{
+        font-size: 18px
+        --color black;
+        --placeholder-color: black;
+    }
+}

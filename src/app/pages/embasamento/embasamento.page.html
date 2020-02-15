@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+         <ion-back-button color="white"></ion-back-button>
+        </ion-buttons>  
+        <h3>Embasamento teórico</h3>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+      <ion-row>
+          <ion-button class='Btn1' size="large" expand='block' (click)="mostrarTextos('EBI')">
+            <ion-icon name="book" class="i1"></ion-icon>
+            <h1 class="titulo1">EBI<p class="text2"></p>
+            </h1>
+          </ion-button>
+  
+  
+  
+  
+          <ion-button class='Btn1' size="large" expand='block' (click)="mostrarTextos('CTS')">
+            <ion-icon class="i2" name="book"></ion-icon>
+            <h1 class="titulo1">CTS<p class="text2"></p>
+            </h1>
+          </ion-button>
+  
+  
+  
+  
+          <ion-button class='Btn1' size="large" expand='block' (click)="mostrarTextos('Ativismo')">
+            <ion-icon name="book" class="i3"></ion-icon>
+            <h1 class="titulo1">Ativismo<p class="text2"></p>
+            </h1>
+          </ion-button>
+        </ion-row>
+  
+  
+     <ion-button class = 'BtnContinuar' routerLink="/qsc" expand = 'block' routerDirection="forward" >Continuar</ion-button>
+  </ion-content>

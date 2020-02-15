@@ -1,0 +1,125 @@
+ion-toolbar{
+    --background:#2B78E4;
+}
+
+
+ion-menu-button{
+    color:white;
+  }
+  h3{
+    margin-left: 5%;
+      color:white; 
+      font-size: 16px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+  }
+
+  .mylabel{
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .item{
+    text-align: justify; 
+    padding: 3%;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  ion-avatar{
+    margin-left: 15px; 
+  }
+
+  ion-slides{
+    height: initial; 
+      .slide-inner{
+      
+            
+          .Btn1 { 
+            width: 96%;
+            height: 22%;
+            margin-top: 2%;  
+            margin-left: 2%;
+            --border-radius: 5%;
+            --background:rgb(2, 168, 2);
+        }
+        
+        .margin-top{
+            position: absolute;
+        }
+        .Btn2 { 
+            width: 96%;
+            height: 20%;
+            margin-top: 3%;  
+            margin-left: 2%;
+            --border-radius: 5%;
+            --background:purple;
+        }
+        
+        .Btn3 { 
+            width: 96%;
+            height: 22%;
+            margin-top: 3%;  
+            margin-left: 2%;
+            --border-radius: 5%;
+            --background:red;
+        }
+        .i2{
+            font-size: 64px;
+        }
+        ion-icon{  
+            margin-right: 8%; 
+            position: absolute;
+            left: 25px;
+        }
+        img{  
+            padding: 10%;
+          
+        
+        }
+        .titulo{
+            position: relative;
+            text-align: left;
+            font-size:16px;
+            font-weight: bold;
+            left: 36px;
+            text-transform: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .titulo1{
+            position: relative;
+            text-align: left;
+            font-size:16px;
+            left: 43px;
+            font-weight: bold;
+            text-transform: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .titulo2{
+            text-align: left;
+            font-size:16px;
+            position: relative;
+            left:30px;
+            font-weight: bold;
+            text-transform: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .i1{
+            font-size: 64px;
+        }
+        .i3{
+            font-size: 64px;
+        }
+        .text2{
+            position: relative;
+            font-size:14px;
+            top:10px;
+            font-weight: normal;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+      
+        }
+      
+  }
+
+
+  

@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="white"></ion-back-button>
+    </ion-buttons>
+    <h3>Envio de texto</h3>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-item>
+    <ion-label class="mylabel">1. Escreva seu texto em uma folha</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label class="mylabel">2. Encontre um local iluminado</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label class="mylabel">3. Clique em tirar foto</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="mylabel">4. Clique em enviar</ion-label>
+  </ion-item>
+
+<ion-item *ngIf="currentImage" item-center >
+      <img [src]="currentImage" >
+</ion-item>
+
+
+
+  <ion-row class="m-t-30">
+    <ion-col>
+      <ion-button class="mybutton" (click)="enviar('' ,null, currentImage)" size="large" expand="block" fill="outline">
+        ENVIAR
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="m-t-30">
+      <ion-col> 
+        <ion-button class="mybutton" (click)="takePicture()" size="large" expand="block" fill="outline">
+         <ion-icon name="camera"></ion-icon>
+           TIRAR FOTO
+        </ion-button>
+      </ion-col>
+    </ion-row>
+
+  
+
+
+</ion-content>

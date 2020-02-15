@@ -1,0 +1,108 @@
+ion-toolbar{
+    --background:green;
+}
+h3{
+    text-align: center;
+    position: relative; 
+    right: 30px;
+    color:white;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+  }
+  ion-back-button{
+      color:white;
+  }
+  
+  ion-col{
+      height: 160px;
+  }
+
+.Btn1 { 
+    width: 96%;
+    height: 100%;
+    margin-top: 2%;  
+    margin-left: 2%;
+
+    --border-radius: 5%;
+    --background:blue;
+}
+
+.Btn2 { 
+    width: 96%;
+    height: 100%;
+    margin-top: 2%;  
+    margin-right: 2%;
+    margin-left: 2%;
+    --border-radius: 5%;
+    --background:purple;
+}
+
+.Btn3 { 
+    width: 96%;
+    height: 100%;
+    margin-top: 3%;  
+    margin-left: 2%;
+    --border-radius: 5%;
+    --background:red;
+}
+.Btn4 { 
+    width: 96%;
+    height: 100%;
+    margin-top: 3%;  
+    margin-right: 2%;
+    margin-left: 2%;
+    --border-radius: 5%;
+    --background:orange;
+}
+.i3{
+    font-size: 64px;
+}
+
+.i1{
+    position:absolute;
+    top:30px;
+    font-size: 64px;
+}
+.i2{
+    position:absolute;
+    top:30px;
+    font-size: 64px;
+}
+.i4{
+    position:absolute;
+    top:30px;
+    font-size: 64px;
+}
+
+
+.titulo1{
+    margin-top: 80px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-transform: none;
+}
+.titulo2{
+    margin-top: 80px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-transform: none;
+}
+.titulo3{
+    margin-top:80px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-transform: none;
+}
+.BtnContinuar{
+    width: 30%;
+    height: 5%;
+    --background:rgb(5, 197, 5);
+    margin-left: 35%;
+    margin-top: 7%;
+    --border-radius:10px; 
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}

@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="white"></ion-back-button>
+    </ion-buttons>
+    <h3>Minhas propostas<br>didáticas</h3>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-card *ngFor="let proposta of propostas;let i = index">
+      <ion-item>
+        <ion-label side="start">{{proposta.qsc}}</ion-label>
+        <ion-label class="green" *ngIf="proposta.compartilhar" side="end" (click)="compartilhar(i)">Compartilhado
+        </ion-label>
+        <ion-label class="red" *ngIf="!proposta.compartilhar" side="end" (click)="compartilhar(i)"> Não compartilhado
+        </ion-label>
+        <ion-icon name="create" color="gray" size="large" item-end (click)='visualizar(i)'></ion-icon>
+      </ion-item>
+    </ion-card>
+  </ion-list>
+
+
+</ion-content>

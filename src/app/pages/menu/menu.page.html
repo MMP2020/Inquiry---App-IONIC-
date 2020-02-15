@@ -1,0 +1,32 @@
+<ion-menu side="start" menuId="menu" contentId="menuContent">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title class="my-label">Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <ion-menu-toggle auto-hide="true">
+        <ion-item  [routerDirection]="'root'" routerLink="/menu/introducao">
+          <ion-icon name="home" slot="start"></ion-icon>
+          <ion-label class="my-label">Home</ion-label>
+        </ion-item>
+        <ion-item  [routerDirection]="'root'" routerLink="/menu/dados">
+          <ion-icon name="contact" slot="start"></ion-icon>
+          <ion-label class="my-label">Meus dados</ion-label>
+        </ion-item>
+        <ion-item  [routerDirection]="'root'" routerLink="/menu/sobre">
+          <ion-icon name="information-circle" slot="start"></ion-icon>
+          <ion-label class="my-label">Sobre o aplicativo</ion-label>
+        </ion-item>
+        <ion-item (click)="logout()">
+          <ion-icon name="exit" slot="start"></ion-icon>
+          <ion-label class="my-label">Sair</ion-label>
+        </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet main id="menuContent"></ion-router-outlet>

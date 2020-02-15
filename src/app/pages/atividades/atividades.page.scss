@@ -1,0 +1,43 @@
+ion-toolbar{
+    --background:green;
+}
+h3{
+    text-align: center;
+    position: relative; 
+    right: 30px;
+    color:white;  
+  }
+  ion-back-button{
+      color:white;
+  }
+
+ion-item{
+    font-size: large;
+   font-weight:bold;
+   padding: 0.5%;
+   --background: rgb(255,255,255,0.4);
+
+}
+
+
+.mylabel{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+ion-button{
+    position: relative;
+    bottom: 10px;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 0;
+    height: 8%;
+    
+}
+
+ion-icon{
+    font-size: xx-large;
+}
+
+.green{
+    color:green;
+}

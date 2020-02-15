@@ -1,0 +1,21 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+         <ion-back-button (click)="update()" color="white"></ion-back-button>
+        </ion-buttons>  
+        <h3>Conteúdo científico<br>relacionado à QSC</h3>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-button class='Btn1' size="large" expand='block' (click)="mostrarOrientacao()">
+      <ion-icon name="people" class="i1"></ion-icon>
+      <h1 class="titulo1">Orientação</h1>
+    </ion-button>
+  
+    <ion-item  class="input1" lines="none">
+      <ion-textarea  [(ngModel)]="proposta.conteudo" rows="10" cols="20" type = 'text' placeholder = 'Conteúdo científico relacionado à QSC'></ion-textarea>
+    </ion-item>
+  
+   
+  </ion-content>

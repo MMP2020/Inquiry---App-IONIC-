@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="white"></ion-back-button>
+    </ion-buttons>
+    <h3>Atividades</h3>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-list>
+    <ion-item routerDirection='forward' [routerLink]="atividades[0].href">
+      <ion-icon [name]='atividades[0].icon' slot="start"></ion-icon>
+      <ion-label class="mylabel">{{atividades[0].titulo}}</ion-label>
+      <ion-icon name="checkmark" class ="green" *ngIf="proposta.probl"></ion-icon>
+    </ion-item>
+    <ion-item routerDirection='forward' [routerLink]="atividades[1].href">
+      <ion-icon [name]='atividades[1].icon' slot="start"></ion-icon>
+      <ion-label class="mylabel">{{atividades[1].titulo}}</ion-label>
+      <ion-icon name="checkmark" class ="green" *ngIf="proposta.hipoteses"></ion-icon>
+    </ion-item>
+    <ion-item routerDirection='forward' [routerLink]="atividades[2].href">
+      <ion-icon [name]='atividades[2].icon' slot="start"></ion-icon>
+      <ion-label class="mylabel">{{atividades[2].titulo}}</ion-label>
+      <ion-icon name="checkmark" class ="green" *ngIf="proposta.cts"></ion-icon>
+    </ion-item>
+    <ion-item routerDirection='forward' [routerLink]="atividades[3].href">
+      <ion-icon [name]='atividades[3].icon' slot="start"></ion-icon>
+      <ion-label class="mylabel">{{atividades[3].titulo}}</ion-label>
+      <ion-icon name="checkmark" class ="green" *ngIf="proposta.conteudo"></ion-icon>
+    </ion-item>
+    <ion-item routerDirection='forward' [routerLink]="atividades[4].href">
+      <ion-icon [name]='atividades[4].icon' slot="start"></ion-icon>
+      <ion-label class="mylabel">{{atividades[4].titulo}}</ion-label>
+      <ion-icon name="checkmark" class ="green" *ngIf="proposta.cooperacao"></ion-icon>
+    </ion-item>
+    <ion-item routerDirection='forward' [routerLink]="atividades[5].href">
+      <ion-icon [name]='atividades[5].icon' slot="start"></ion-icon>
+      <ion-label class="mylabel">{{atividades[5].titulo}}</ion-label>
+      <ion-icon name="checkmark" class ="green" *ngIf="proposta.planejamento"></ion-icon>
+    </ion-item>
+    <ion-item routerDirection='forward' [routerLink]="atividades[6].href">
+      <ion-icon [name]='atividades[6].icon' slot="start"></ion-icon>
+      <ion-label class="mylabel">{{atividades[6].titulo}}</ion-label>
+      <ion-icon name="checkmark" class ="green" *ngIf="proposta.investigacao"></ion-icon>
+    </ion-item>
+    <ion-item routerDirection='forward' [routerLink]="atividades[7].href">
+      <ion-icon [name]='atividades[7].icon' slot="start"></ion-icon>
+      <ion-label class="mylabel">{{atividades[7].titulo}}</ion-label>
+      <ion-icon name="checkmark" class ="green" *ngIf="proposta.dados"></ion-icon>
+    </ion-item>
+    <ion-item routerDirection='forward' [routerLink]="atividades[8].href">
+      <ion-icon [name]='atividades[8].icon' slot="start"></ion-icon>
+      <ion-label class="mylabel">{{atividades[8].titulo}}</ion-label>
+      <ion-icon name="checkmark" class ="green" *ngIf="proposta.retomada"></ion-icon>
+    </ion-item>
+    <ion-item routerDirection='forward' [routerLink]="atividades[9].href">
+      <ion-icon [name]='atividades[9].icon' slot="start"></ion-icon>
+      <ion-label class="mylabel">{{atividades[9].titulo}}</ion-label>
+      <ion-icon name="checkmark" class ="green" *ngIf="proposta.acao"></ion-icon>
+    </ion-item>
+    <ion-item routerDirection='forward' [routerLink]="atividades[10].href">
+      <ion-icon [name]='atividades[10].icon' slot="start"></ion-icon>
+      <ion-label class="mylabel">{{atividades[10].titulo}}</ion-label>
+      <ion-icon name="checkmark" class ="green" *ngIf="proposta.comunicacao"></ion-icon>
+    </ion-item>
+    <ion-item routerDirection='forward' [routerLink]="atividades[11].href">
+      <ion-icon [name]='atividades[11].icon' slot="start"></ion-icon>
+      <ion-label class="mylabel">{{atividades[11].titulo}}</ion-label>
+      <ion-icon name="checkmark" class ="green" *ngIf="proposta.redes"></ion-icon>
+    </ion-item>
+  </ion-list>
+  <ion-button size="large"
+    *ngIf="proposta.qsc&& proposta.central&& proposta.especifica&& proposta.probl&& proposta.hipoteses&& proposta.cooperacao&& proposta.cts&& proposta.dados&& proposta.investigacao&& proposta.planejamento&& proposta.redes&& proposta.retomada && proposta.conteudo && proposta.acao && proposta.comunicacao"
+    expand="block" fill="outline" routerLink="/form" routerDirection="forward">
+    <ion-icon slot="start" name="save"></ion-icon>
+    FINALIZAR
+  </ion-button>
+</ion-content>
