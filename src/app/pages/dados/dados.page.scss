@@ -35,7 +35,28 @@ h1{
  }
 
  
-  .btn{
-      margin-top: 5%;
+ .Btn1{
+    margin-top: 3%;
+    --background:blue;
+    --background-activated:rgb(0, 0, 199);
+ } 
+
+ .Btn2{
+    --background:red;
+    --background-activated: rgb(206, 1, 1);
+ } 
+
+ .BtnCam{
+    --background:yellow;
+    --background-activated: rgb(204, 204, 0);
+ }
+
+  ion-button.Btn1, ion-button.Btn2{
+    position: relative;  
+    margin-top: 3%;
+    width: 96%;
+    height: 32px;
+    --border-radius: 0px;
+    margin-left: 2%;
   }
   

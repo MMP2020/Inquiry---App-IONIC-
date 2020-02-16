@@ -1,48 +1,41 @@
 <ion-header>
   <ion-toolbar>
-    <ion-button (click)="close()" slot = 'start' fill="clear"  >
-      <ion-icon name= "arrow-back" size="large"></ion-icon>
-    </ion-button>  
-      <h3>Orientação</h3>
+    <ion-button (click)="close()" slot='start' fill="clear">
+      <ion-icon name="arrow-back" size="large"></ion-icon>
+    </ion-button>
+    <h1>Orientação</h1>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
- <p class ='ion-margin'>
-    &nbsp;
-    &nbsp;
-    &nbsp;
+<div>
+  <p>
     {{this.orientacoes[0]["t1"]}}
-    <br><br>  
-    &nbsp;
-    &nbsp;
+  </p>
+  <p>
     {{this.orientacoes[0]["t2"]}}
-    <br><br>
-    &nbsp;
-    &nbsp;
+  </p>
+  <p>
     {{this.orientacoes[0]["t3"]}}
-    <br><br>
-    &nbsp;
-    &nbsp;
+  </p>
+  <p>
     {{this.orientacoes[0]["texto1"]}}
-    <br><br>
-    &nbsp;
-    &nbsp;
+  </p>
+  <p>
     {{this.orientacoes[0]["texto2"]}}
-    <br><br>
-    &nbsp;
-    &nbsp;
+  </p>
+  <p>
     {{this.orientacoes[0]["texto3"]}}
-    <br><br>
-    &nbsp;
-    &nbsp;
+  </p>
+  <p>
     {{this.orientacoes[0]["texto4"]}}
-    <br><br>
-    &nbsp;
-    &nbsp;
+  </p>
+  <p>
     {{this.orientacoes[0]["texto5"]}}
-    <br><br>
-    &nbsp;
-    &nbsp;
-    {{this.orientacoes[0]["texto6"]}}</p>
+  </p>
+  <p>
+    {{this.orientacoes[0]["texto6"]}}
+  </p>
+</div>
+
 </ion-content>

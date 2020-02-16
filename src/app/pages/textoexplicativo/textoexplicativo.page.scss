@@ -1,7 +1,7 @@
 ion-toolbar{
     --background:green;
 }
-h3{
+h1{
     text-align: center;
     position: relative; 
     right: 30px;
@@ -22,13 +22,21 @@ h3{
     margin-top: 1%;
     --border-radius:10px; 
     font-size: 14px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --background-activated:rgb(5, 160, 5); 
 }
 
-.ion-margin{
-    font-size: 21px;
-    text-align:justify;
+.item{
     padding: 3%;
+}
+p{
+    text-align:justify;
     font-size: 14px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0 ;
+}
+
+p + p{
+    text-indent: 1.5em;
+    margin-top: 0 ;
 }
