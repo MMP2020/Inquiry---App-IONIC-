@@ -6,7 +6,7 @@
     <ion-avatar slot="start">
       <img [src]="user.photoURL" *ngIf="user.photoURL">
     </ion-avatar>
-    <h3 *ngIf="user.displayName">{{user.displayName}}</h3>
+    <h1 *ngIf="user.displayName">{{user.displayName}}</h1>
 
 
   </ion-toolbar>
@@ -24,8 +24,6 @@
 
 <ion-content class="swiper-no-swiping" [scrollEvents]="true">
 
-
-
   <ion-slides class="sliders">
 
     <ion-slide class="slide-inner ion-padding">
@@ -33,37 +31,37 @@
       <ion-row>
         <img src="assets\back.jpg" (click)="abrirFoto()">
         <div class="item item-text-wrap">
-          &nbsp;
-          &nbsp;
-          O aplicativo Inquiry tem o objetivo de oferecer aos formadores de professores e acadêmicos em Ciências
-          da Natureza (consideramos aqui, as Ciências Biológicas, Física e Química), uma forma prática, investigativa,
-          inclusiva, interdisciplinar e dinâmica de trabalhar a abordagem de Ensino Baseado em Investigação – EBI, em
-          articulação com as relações Ciência-Tecnologia-Sociedade - CTS e de ativismo, almejando uma Alfabetização
-          Científica e Tecnológica – ACT ampliada na perspectiva da ação social dos acadêmicos.
-          <br>
-          &nbsp;
-          &nbsp;
-          Este aplicativo é uma ferramenta de apoio aos professores formadores, aproximando o contexto educacional da
-          realidade dos acadêmicos que vivem num mundo, cada vez mais tecnológico. Neste mundo, o professor formador tem
-          o papel de orientação/mediação, criando espaços e condições para os acadêmicos pensarem, falarem, escreverem,
-          criarem, refletirem, fazerem, decidirem, inovarem e comunicarem suas atividades e os resultados de suas ações
-          no contexto educacional e social.
-          <br>
-          &nbsp;
-          &nbsp;
-          O Inquiry surgiu das reflexões das intervenções realizadas na formação inicial de professores no curso de
-          Ciências Biológicas. É o produto educacional final de uma pesquisa de doutorado em Ensino de Ciência e
-          Tecnologia ligada ao desenvolvimento da tese. O aplicativo oferece atividades investigativas, indicações de
-          textos, vídeos (documentários, filmes, desenhos), estratégias didáticas e ferramentas para organização de
-          informações (Cmap Tools-mapas conceituais, Flipboard-revista personalizada, Pocket-gerir lista de artigos e
-          Podkicker- agregadores de podcasts), Wordpress-criação de sites e blog online, Foldify-desenhar e criar
-          imagens e um botão para envio/entrega de atividades.
-          <br>
-          &nbsp;
-          &nbsp;
-          O Inquiry surgiu das reflexões das intervenções realizadas na formação inicial de professores no curso de
-          Ciências Biológicas. É o produto educacional final de uma pesquisa de doutorado em Ensino de Ciência e
-          Tecnologia ligada ao desenvolvimento da tese.
+          <p>
+            O aplicativo Inquiry tem o objetivo de oferecer aos formadores de professores e acadêmicos em Ciências
+            da Natureza (consideramos aqui, as Ciências Biológicas, Física e Química), uma forma prática, investigativa,
+            inclusiva, interdisciplinar e dinâmica de trabalhar a abordagem de Ensino Baseado em Investigação – EBI, em
+            articulação com as relações Ciência-Tecnologia-Sociedade - CTS e de ativismo, almejando uma Alfabetização
+            Científica e Tecnológica – ACT ampliada na perspectiva da ação social dos acadêmicos.
+          </p>
+          <p>
+            Este aplicativo é uma ferramenta de apoio aos professores formadores, aproximando o contexto educacional da
+            realidade dos acadêmicos que vivem num mundo, cada vez mais tecnológico. Neste mundo, o professor formador
+            tem
+            o papel de orientação/mediação, criando espaços e condições para os acadêmicos pensarem, falarem,
+            escreverem,
+            criarem, refletirem, fazerem, decidirem, inovarem e comunicarem suas atividades e os resultados de suas
+            ações
+            no contexto educacional e social.
+          </p>
+          <p>
+            O Inquiry surgiu das reflexões das intervenções realizadas na formação inicial de professores no curso de
+            Ciências Biológicas. É o produto educacional final de uma pesquisa de doutorado em Ensino de Ciência e
+            Tecnologia ligada ao desenvolvimento da tese. O aplicativo oferece atividades investigativas, indicações de
+            textos, vídeos (documentários, filmes, desenhos), estratégias didáticas e ferramentas para organização de
+            informações (Cmap Tools-mapas conceituais, Flipboard-revista personalizada, Pocket-gerir lista de artigos e
+            Podkicker- agregadores de podcasts), Wordpress-criação de sites e blog online, Foldify-desenhar e criar
+            imagens e um botão para envio/entrega de atividades.
+          </p>
+          <p>
+            O Inquiry surgiu das reflexões das intervenções realizadas na formação inicial de professores no curso de
+            Ciências Biológicas. É o produto educacional final de uma pesquisa de doutorado em Ensino de Ciência e
+            Tecnologia ligada ao desenvolvimento da tese.
+          </p>
         </div>
       </ion-row>
     </ion-slide>
@@ -74,9 +72,9 @@
       <ion-row>
         <ion-button class='Btn1' size="large" expand='block' routerLink="/textoexplicativo" routerDirection="forward">
           <ion-icon name="document" class="i1"></ion-icon>
-          <h1 class="titulo1">Nova proposta<br> didática<p class="text2">Inicie a construção de sua<br>proposta
+          <h2 class="titulo1">Nova proposta<br> didática<p class="text">Inicie a construção de sua<br>proposta
               didática baseada<br>em investigação</p>
-          </h1>
+          </h2>
         </ion-button>
 
 
@@ -84,9 +82,9 @@
 
         <ion-button class='Btn2' size="large" expand='block' routerLink="/minhas" routerDirection="forward">
           <ion-icon class="i2" name="folder"></ion-icon>
-          <h1 class="titulo2">Minhas propostas<br> didáticas<p class="text2">Confira todas as suas<br> propostas
+          <h3 class="titulo2">Minhas propostas<br> didáticas<p class="text">Confira todas as suas<br> propostas
               didáticas<br>construídas</p>
-          </h1>
+          </h3>
         </ion-button>
 
 
@@ -94,19 +92,15 @@
 
         <ion-button class='Btn3' size="large" expand='block' routerLink="/disponiveis" routerDirection="forward">
           <ion-icon name="cloud" class="i3"></ion-icon>
-          <h1 class="titulo">Propostas didáticas<br> disponíveis<p class="text2">Confira as propostas<br>didáticas
+          <h4 class="titulo3">Propostas didáticas<br> disponíveis<p class="text">Confira as propostas<br>didáticas
               compartilhadas<br> no aplicativo Inquiry
             </p>
-          </h1>
+          </h4>
         </ion-button>
       </ion-row>
 
     </ion-slide>
 
   </ion-slides>
-
-
-
-
 
 </ion-content>

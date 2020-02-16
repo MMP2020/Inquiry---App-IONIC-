@@ -6,12 +6,23 @@ ion-toolbar{
 ion-menu-button{
     color:white;
   }
-  h3{
+  h1{
     margin-left: 5%;
       color:white; 
       font-size: 16px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
   }
+
+    p {
+        margin-bottom: 0;
+        text-align: justify;
+        font-size: 14px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    p + p {
+        text-indent: 1.5em;
+        margin-top: 0; 
+    }
 
   .mylabel{
     font-size: 14px;
@@ -19,10 +30,7 @@ ion-menu-button{
   }
 
   .item{
-    text-align: justify; 
     padding: 3%;
-    font-size: 14px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   ion-avatar{
@@ -33,19 +41,21 @@ ion-menu-button{
     height: initial; 
       .slide-inner{
       
-            
-          .Btn1 { 
+        .margin-top{
+            position: absolute;
+        }    
+         
+        .Btn1 { 
             width: 96%;
             height: 22%;
             margin-top: 2%;  
             margin-left: 2%;
             --border-radius: 5%;
             --background:rgb(2, 168, 2);
+            --background-activated: rgb(2, 138, 2);
         }
-        
-        .margin-top{
-            position: absolute;
-        }
+
+
         .Btn2 { 
             width: 96%;
             height: 20%;
@@ -53,6 +63,7 @@ ion-menu-button{
             margin-left: 2%;
             --border-radius: 5%;
             --background:purple;
+            --background-activated: rgb(95, 0, 95);
         }
         
         .Btn3 { 
@@ -62,9 +73,7 @@ ion-menu-button{
             margin-left: 2%;
             --border-radius: 5%;
             --background:red;
-        }
-        .i2{
-            font-size: 64px;
+            --background-activated: rgb(206, 1, 1);
         }
         ion-icon{  
             margin-right: 8%; 
@@ -73,19 +82,9 @@ ion-menu-button{
         }
         img{  
             padding: 10%;
-          
-        
-        }
-        .titulo{
-            position: relative;
-            text-align: left;
-            font-size:16px;
-            font-weight: bold;
-            left: 36px;
-            text-transform: none;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .titulo1{
+            bottom: 7px;
             position: relative;
             text-align: left;
             font-size:16px;
@@ -95,6 +94,7 @@ ion-menu-button{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .titulo2{
+            bottom: 7px;
             text-align: left;
             font-size:16px;
             position: relative;
@@ -103,16 +103,29 @@ ion-menu-button{
             text-transform: none;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        .titulo3{
+            bottom: 7px;
+            position: relative;
+            text-align: left;
+            font-size:16px;
+            font-weight: bold;
+            left: 36px;
+            text-transform: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
         .i1{
+            font-size: 64px;
+        }
+        .i2{
             font-size: 64px;
         }
         .i3{
             font-size: 64px;
         }
-        .text2{
+        .text{
             position: relative;
             font-size:14px;
-            top:10px;
+            top:5px;
             font-weight: normal;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
