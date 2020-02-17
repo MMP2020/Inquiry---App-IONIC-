@@ -69,13 +69,14 @@ export class DadosPage implements OnInit {
 
 
 
-  async uploadPicture(blob: Blob) {
+  public async uploadPicture(blob: Blob) {
 
     const ref = this.Storage.ref(this.user.uid + '.jpg');
 
     const task = ref.put(blob);
 
     this.uploadPercent = task.percentageChanges();
+
 
     task.snapshotChanges().pipe(
       finalize(() => ref.getDownloadURL().subscribe(async (x) => { this.userDados.photoURL = await x; }))
