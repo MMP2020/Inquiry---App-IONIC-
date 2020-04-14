@@ -11,7 +11,9 @@ import { File } from '@ionic-native/file/ngx';
 import { Observable } from 'rxjs';
 import { finalize } from 'rxjs/operators';
 import { AngularFireStorage } from '@angular/fire/storage';
-import { auth }  from "firebase/app";
+import { Platform } from '@ionic/angular';
+import * as firebase from 'firebase/app';
+import { Facebook, FacebookLoginResponse  } from '@ionic-native/facebook/ngx';
 @Component({
   selector: 'app-cadastro',
   templateUrl: './cadastro.page.html',
@@ -37,6 +39,8 @@ export class CadastroPage implements OnInit {
     private camera: Camera,
     private file: File, 
     private Storage: AngularFireStorage,
+    private fb: Facebook,
+    public platform: Platform
   ) { }
 
   ngOnInit() {
@@ -101,12 +105,21 @@ export class CadastroPage implements OnInit {
   }
 
   async loginFacebook() {
-    try {
-      await this.FirebaseAuth.auth.signInWithRedirect(new auth.FacebookAuthProvider());  
-    } catch (error) {
-      this.presentToast(error.message);
-    } finally {
-    }
+    return new Promise<User>((resolve, reject) => {
+      if (this.platform.is('cordova')) {
+        //["public_profile"] is the array of permissions, you can add more if you need
+        this.fb.login([])
+        .then((response: FacebookLoginResponse ) => {
+          const facebookCredential = firebase.auth.FacebookAuthProvider.credential(response.authResponse.accessToken);
+          firebase.auth().signInWithCredential(facebookCredential)
+            .then(user => resolve());
+        }, err => reject(err)
+        );
+      }
+      else {
+        this.FirebaseAuth.auth.signInWithRedirect(new firebase.auth.FacebookAuthProvider());
+      }
+    })
   }
 
   

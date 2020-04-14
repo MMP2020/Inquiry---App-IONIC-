@@ -24,6 +24,7 @@ import { SocialSharing } from '@ionic-native/social-sharing/ngx';
 import { File } from '@ionic-native/file/ngx'
 import { BrowserTab } from '@ionic-native/browser-tab/ngx';
 import { HttpModule } from '@angular/http';
+import { Facebook, FacebookLoginResponse  } from '@ionic-native/facebook/ngx';
 
 
 import {AngularFireStorageModule} from '@angular/fire/storage';
@@ -54,6 +55,7 @@ import {AngularFireStorageModule} from '@angular/fire/storage';
     SocialSharing,
     File,
     BrowserTab,
+    Facebook,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

@@ -4,7 +4,7 @@ import { AuthGuard } from './guards/auth.guard';
 import { LoginGuard } from './guards/login.guard';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'home', loadChildren: './pages/home/home.module#HomePageModule' , canActivate: [LoginGuard] },
   { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule', canActivate: [LoginGuard]  },
   { path: 'login1', loadChildren: './pages/login1/login1.module#Login1PageModule' , canActivate: [LoginGuard] },

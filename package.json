@@ -25,6 +25,7 @@
     "@ionic-native/browser-tab": "^5.19.1",
     "@ionic-native/camera": "^5.19.1",
     "@ionic-native/core": "^5.19.1",
+    "@ionic-native/facebook": "^5.22.0",
     "@ionic-native/file": "^5.19.1",
     "@ionic-native/image-picker": "^5.19.1",
     "@ionic-native/keyboard": "^5.19.1",

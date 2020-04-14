@@ -12,7 +12,8 @@ export class HomePage implements OnInit {
   
   constructor(private router: Router) {
    }
-   ionViewWillEnter() {
+   
+   ionViewDidEnter() {
     setTimeout(() => {
       this.splash = false;
       this.router.navigate(['login']);

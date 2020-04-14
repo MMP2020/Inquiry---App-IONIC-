@@ -42,7 +42,7 @@ export class Login1Page implements OnInit {
 
   async loginFacebook() {
     try {
-      await this.FirebaseAuth.auth.signInWithRedirect(new auth.FacebookAuthProvider());  
+      await this.authService.doFacebookLogin();  
     } catch (error) {
       this.presentToast(error.message);
     } finally {

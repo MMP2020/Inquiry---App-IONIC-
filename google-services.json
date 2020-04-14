@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "787853527522",
+    "firebase_url": "https://inquiry-14b61.firebaseio.com",
+    "project_id": "inquiry-14b61",
+    "storage_bucket": "inquiry-14b61.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787853527522:android:f32d9e5e9712e353c111bb",
+        "android_client_info": {
+          "package_name": "io.ionic.inquiry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787853527522-90shjfrn9hudl39e1kv83nf18b3ub0g6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByCv6Ep29IPMLaCMlgx5vpNnvZM4QKXOs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787853527522-90shjfrn9hudl39e1kv83nf18b3ub0g6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
