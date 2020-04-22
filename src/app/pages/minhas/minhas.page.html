@@ -8,17 +8,20 @@
 </ion-header>
 <ion-content>
   <ion-list>
-    <ion-card *ngFor="let proposta of propostas;let i = index">
-      <ion-item>
-        <ion-label side="start">{{proposta.qsc}}</ion-label>
-        <ion-label class="green" *ngIf="proposta.compartilhar" side="end" (click)="compartilhar(i)">Compartilhado
-        </ion-label>
-        <ion-label class="red" *ngIf="!proposta.compartilhar" side="end" (click)="compartilhar(i)"> Não compartilhado
-        </ion-label>
-        <ion-icon name="create" color="gray" size="large" item-end (click)='visualizar(i)'></ion-icon>
-      </ion-item>
+    <ion-card *ngFor="let proposta of propostas;let i = index" (click)='visualizar(i)'>
+        <ion-card-content>
+            <ion-item lines="none">
+                <ion-label class="label1" >{{proposta.qsc}} </ion-label>
+            </ion-item>
+            <ion-item lines="none">
+                <ion-label> Pergunta Central: {{proposta.central}} </ion-label>
+            </ion-item>
+            <ion-item lines="none">
+                <ion-label> Pergunta Específica: {{proposta.especifica}} </ion-label>
+            </ion-item>
+        </ion-card-content>
     </ion-card>
-  </ion-list>
+</ion-list>
 
 
 </ion-content>

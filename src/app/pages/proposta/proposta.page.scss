@@ -1,7 +1,15 @@
 .red{
-    color:red;
+    --background: red;
+    color:white;
+    padding: 0;
+    width: 37%;
+    height: 25px;
 }
 
 .green{
-    color:green;
+    --background: green;
+    color:white;
+    padding: 0;
+    width: 31%;
+    height: 25px;
 }

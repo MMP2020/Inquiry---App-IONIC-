@@ -4,6 +4,10 @@
       <ion-icon name="close" size="large"></ion-icon>
     </ion-button>
     <ion-title>Proposta</ion-title>
+    <ion-button class="green" *ngIf="item.uid==uid && item.compartilhar" slot="end" (click)="compartilhar(false)">Compartilhado
+    </ion-button>
+    <ion-button class="red" *ngIf="item.uid==uid && !item.compartilhar" slot="end" (click)="compartilhar(true)"> Não compartilhado
+    </ion-button>
   </ion-toolbar>
 </ion-header>
 

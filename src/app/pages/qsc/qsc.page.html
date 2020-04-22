@@ -52,5 +52,5 @@
     <ion-input [(ngModel)]="proposta.especifica" type = 'text' placeholder = 'Pergunta específica'></ion-input>
   </ion-item>
 
- <ion-button *ngIf="proposta.qsc&& proposta.central&& proposta.especifica" (click)="update()" class = 'BtnContinuar' routerLink="/modelo" expand = 'block' routerDirection = 'forward' >Continuar</ion-button>
+ <ion-button [disabled]="!proposta.qsc || !proposta.central || !proposta.especifica" (click)="update()" class = 'BtnContinuar' routerLink="/modelo" expand = 'block' routerDirection = 'forward' >Continuar</ion-button>
 </ion-content>
